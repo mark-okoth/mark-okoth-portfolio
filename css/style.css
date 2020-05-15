@@ -8,6 +8,10 @@
   line-height: 2;
   word-spacing: 5px;
 }
+
+.logo{
+  text-transform: uppercase;
+}
 /* nav bar styling */
 nav {
   display: flex;
@@ -60,11 +64,13 @@ nav li a:hover {
     height: 90vh;
 }
 .about{
-    width:900px;
+    width:700px;
     font-size: 1.2rem;
     transition: all 1s ease;
     opacity: 0.5;
 }
+
+
 .about h1{
     font-weight: bold;
     text-transform: uppercase;
@@ -123,3 +129,5 @@ h1{
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
+
+
