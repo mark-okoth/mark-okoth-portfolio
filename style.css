@@ -70,19 +70,22 @@ nav li a:hover {
     text-transform: uppercase;
 }
 .contact{
-    color: #ffff;
-    border: 1px solid grey;
-    padding-right:15px;
-    padding-left:15px;
+    border: 1px solid #fff;
+    color: #fff;
+    width: 20%;
+    margin: 3.75em auto 0 auto;
+    font-size: 1em;
+    padding: 1.2em 0;
     text-transform: uppercase;
-    font-weight: bold;
-    margin: 20px auto;
-    transition: all 2s ease;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 1s ease-in-out;
 }
 .contact:hover{
     background-color:#ffff;
     color:black;
-    padding: 10px;
+    
 }
 .about:hover{
     opacity: 1;
