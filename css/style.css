@@ -62,15 +62,15 @@ nav li a:hover {
 .about{
     width:900px;
     font-size: 1.2rem;
-    transition: all 3s ease;
-    opacity: 0.3;
+    transition: all 1s ease;
+    opacity: 0.5;
 }
 .about h1{
     font-weight: bold;
     text-transform: uppercase;
 }
 .contact{
-    border: 1px solid #fff;
+    border: 1px lightblue;
     color: #fff;
     width: 20%;
     margin: 3.75em auto 0 auto;
