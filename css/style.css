@@ -62,7 +62,7 @@ nav li a:hover {
 .about{
     width: 600px;
     font-size: 1.2rem;
-    transition: all 5s ease;
+    transition: all 3s ease;
     opacity: 0.3;
 }
 .about h1{
@@ -89,7 +89,7 @@ nav li a:hover {
 }
 .about:hover{
     opacity: 1;
-    color: grey;
+    color:#ffff;
 }
 .social ul li{
     display: inline-block;
