@@ -80,11 +80,27 @@ nav li a:hover {
     transition: all 2s ease;
 }
 .contact:hover{
-    background-color: blue;
-    padding-left: 20px;
-    padding-right: 20px;
+    background-color:#ffff;
+    color:black;
+    padding: 10px;
 }
 .about:hover{
     opacity: 1;
     color: grey;
+}
+.social ul li{
+    display: inline-block;
+    padding: 20px;
+}
+
+.social .fa{
+    font-size: 30px;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 15px;
+    transition: all 2s ease-in-out;
+}
+
+.social .fa:hover{
+    background: #ffff;
 }
