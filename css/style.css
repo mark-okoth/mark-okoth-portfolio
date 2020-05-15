@@ -60,7 +60,7 @@ nav li a:hover {
     height: 90vh;
 }
 .about{
-    width: 600px;
+    width:900px;
     font-size: 1.2rem;
     transition: all 3s ease;
     opacity: 0.3;
@@ -104,6 +104,7 @@ nav li a:hover {
     border-radius: 50%;
     padding: 15px;
     transition: all 2s ease-in-out;
+    background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
 }
 
 .social .fa:hover{
