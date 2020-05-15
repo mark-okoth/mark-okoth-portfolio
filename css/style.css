@@ -43,7 +43,7 @@ nav li a:hover {
 }
 
 .container{
-    background: url('candle.jpg');
+    background: url('../img/candle.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
