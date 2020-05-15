@@ -15,7 +15,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   min-height: 50px;
-  background: rgb(15, 1, 1);
+  background: rgb(8, 0, 0);
 }
 
 nav .logo {
@@ -61,8 +61,30 @@ nav li a:hover {
 }
 .about{
     width: 600px;
+    font-size: 1.2rem;
+    transition: all 5s ease;
+    opacity: 0.1;
 }
 .about h1{
     font-weight: bold;
-    font-style: Poiret;
+    text-transform: uppercase;
+}
+.contact{
+    color: #ffff;
+    border: 1px solid grey;
+    padding-right:15px;
+    padding-left:15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 20px auto;
+    transition: all 2s ease;
+}
+.contact:hover{
+    background-color: blue;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.about:hover{
+    opacity: 1;
+    color: grey;
 }
