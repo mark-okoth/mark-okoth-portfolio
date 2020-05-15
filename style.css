@@ -1,41 +1,68 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Poiret+One&family=Roboto:ital,wght@0,100;0,300;1,100&family=Tangerine:wght@400;700&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-decoration: none;
-    font-family:roboto;
+@import url("https://fonts.googleapis.com/css2?family=Poiret+One&family=Roboto:ital,wght@0,100;0,300;1,100&family=Tangerine:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: roboto;
+  line-height: 2;
+  word-spacing: 5px;
+}
+/* nav bar styling */
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 50px;
+  background: rgb(15, 1, 1);
 }
 
-nav{
+nav .logo {
+  font-weight: bold;
+  margin: auto 30px;
+  color: white;
+}
+ul {
+  margin: auto 30px;
+}
+
+nav li {
+  display: inline-block;
+  padding: 20px;
+}
+
+nav li a {
+  font-weight: bold;
+  color: white;
+  padding-bottom: 10px;
+}
+nav li a:hover {
+  border-bottom: 5px solid #ffff;
+  margin-bottom: 10px;
+}
+
+.container{
+    background: url('candle.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.home{
+    color: #ffff;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    min-height: 50px;
-    background: rgb(233, 215, 215);
+    text-align: center;
+    width: 100vw;
+    height: 90vh;
 }
-
-nav .logo{
+.about{
+    width: 600px;
+}
+.about h1{
     font-weight: bold;
-    margin: auto 30px;
-    color: white;
+    font-style: Poiret;
 }
-ul{
-    margin: auto 30px;
-}
-
-nav li{
-    display: inline-block;
-    padding: 10px;
-    
-}
-
-nav li a{
-    font-weight: bold;
-    color: white;
-    padding: 0px;
-    
-}
-
