@@ -130,7 +130,7 @@ h1 {
 
 .about-container {
   display: grid;
-  background: rgb(152, 230, 204);
+  background: rgb(216, 247, 231);
   color: white;
   height: 90vh;
   grid-template-areas:
