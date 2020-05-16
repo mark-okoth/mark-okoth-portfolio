@@ -9,7 +9,7 @@
   word-spacing: 5px;
 }
 
-.logo{
+.logo {
   text-transform: uppercase;
 }
 /* nav bar styling */
@@ -19,7 +19,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   min-height: 50px;
-  background:black
+  background: black;
 }
 
 nav .logo {
@@ -46,88 +46,127 @@ nav li a:hover {
   margin-bottom: 10px;
 }
 
-.container{
-    background: url('../img/candle.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
+.container {
+  background: url("../img/candle.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
 }
-.home{
-    color: #ffff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 100vw;
-    height: 90vh;
+.home {
+  color: #ffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100vw;
+  height: 90vh;
 }
-.about{
-    width:700px;
-    font-size: 1.2rem;
-    transition: all 1s ease;
-    opacity: 0.5;
-}
-
-
-.about h1{
-    font-weight: bold;
-    text-transform: uppercase;
-}
-.contact{
-    border: 1px lightblue;
-    color: #fff;
-    width: 20%;
-    margin: 3.75em auto 0 auto;
-    font-size: 1em;
-    padding: 1.2em 0;
-    text-transform: uppercase;
-    -webkit-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out;
-    transition: all 1s ease-in-out;
-    background: linear-gradient(to right, grey,lightblue );
-}
-.contact:hover{
-    background-color:#ffff;
-    color:black;
-    background: linear-gradient(to right, #05FBFF,#1E00FF);
-    
-}
-.about:hover{
-    opacity: 1;
-    color:#ffff;
-}
-.social ul li{
-    display: inline-block;
-    padding: 20px;
+.about {
+  width: 700px;
+  font-size: 1.2rem;
+  transition: all 1s ease;
+  opacity: 0.5;
 }
 
-.social .fa{
-    font-size: 30px;
-    border: 1px solid white;
-    border-radius: 50%;
-    padding: 15px;
-    transition: all 2s ease-in-out;
-    background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
-}
-
-.social .fa:hover{
-    background: #ffff;
-}
-
-h1{
+.about h1 {
+  font-weight: bold;
   text-transform: uppercase;
-	background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
 }
-.about{
+.contact {
+  border: 1px lightblue;
+  color: #fff;
+  width: 20%;
+  margin: 3.75em auto 0 auto;
+  font-size: 1em;
+  padding: 1.2em 0;
   text-transform: uppercase;
-	background: -webkit-linear-gradient( grey,white, purple );
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 1s ease-in-out;
+  background: linear-gradient(to right, grey, lightblue);
+}
+.contact:hover {
+  background-color: #ffff;
+  color: black;
+  background: linear-gradient(to right, #05fbff, #1e00ff);
+}
+.about:hover {
+  opacity: 1;
+  color: #ffff;
+}
+.social ul li {
+  display: inline-block;
+  padding: 20px;
 }
 
+.social .fa {
+  font-size: 30px;
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 15px;
+  transition: all 2s ease-in-out;
+  background: linear-gradient(to right, #30cfd0 0%, #330867 100%);
+}
 
+.social .fa:hover {
+  background: #ffff;
+}
+
+h1 {
+  text-transform: uppercase;
+  background: linear-gradient(to right, #30cfd0 0%, #330867 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.about {
+  text-transform: uppercase;
+  background: -webkit-linear-gradient(grey, white, purple);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.about-container {
+  display: grid;
+  background: rgb(152, 230, 204);
+  color: white;
+  height: 90vh;
+  grid-template-areas:
+    "about-header about-header about-header"
+    "image-section about-description about-description";
+  grid-gap: 1.5rem;
+}
+
+.about-header {
+  grid-area: about-header;
+  text-align: center;
+}
+.about-header h3 {
+  padding: 10px;
+}
+.image-section {
+  grid-area: image-section;
+  margin-left: 20px;
+}
+.image-section img {
+  box-shadow: 10px 10px 10px black;
+  height: 400px;
+}
+.about-description {
+  grid-area: about-description;
+  display: flex;
+  background: white;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-family: Tangerine;
+  height: 400px;
+  margin-right: 20px;
+  box-shadow: 5px 5px 5px black;
+}
+
+.about-description p {
+  margin: auto 20px;
+}
