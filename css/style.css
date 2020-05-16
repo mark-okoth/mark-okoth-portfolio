@@ -132,7 +132,7 @@ h1 {
   display: grid;
   background: rgb(216, 247, 231);
   color: white;
-  height: 90vh;
+  height: 100vh;
   grid-template-areas:
     "about-header about-header about-header"
     "image-section about-description about-description";
@@ -145,6 +145,8 @@ h1 {
 }
 .about-header h3 {
   padding: 10px;
+  text-transform: uppercase;
+  color: black;
 }
 .image-section {
   grid-area: image-section;
@@ -152,21 +154,40 @@ h1 {
 }
 .image-section img {
   box-shadow: 10px 10px 10px black;
-  height: 400px;
+  height: 500px;
 }
 .about-description {
   grid-area: about-description;
   display: flex;
+  flex-direction: column;
   background: white;
   justify-content: center;
   align-items: center;
   color: black;
   font-family: Tangerine;
-  height: 400px;
+  height: 500px;
   margin-right: 20px;
   box-shadow: 5px 5px 5px black;
+  
 }
 
 .about-description p {
-  margin: auto 20px;
+  margin: 0 20px;
+  
+}
+
+.about-description a{
+  
+  padding: 20px;
+  color: black;
+  background: linear-gradient(to right, grey, lightblue);
+  transition: all 2s ease-in-out;
+  text-transform: uppercase;
+}
+
+.about-description a:hover{
+  background: aquamarine;
+}
+span{
+  font-weight: bold;
 }
