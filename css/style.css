@@ -8,18 +8,24 @@
   line-height: 2;
   word-spacing: 5px;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 .logo {
   text-transform: uppercase;
 }
 /* nav bar styling */
 nav {
+  position: fixed;
+  width: 100vw;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   min-height: 50px;
   background: black;
+  
 }
 
 nav .logo {
