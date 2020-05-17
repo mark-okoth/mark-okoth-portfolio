@@ -212,15 +212,20 @@ span{
 }
 
 .card{
-  box-shadow: 2px 2px 2px 2px  darkslategrey;
+
   margin-right: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 400px;
+  background: hsl(207, 26%, 8%);
+  color:white;
 }
 
 .card p{
   text-align: center;
+}
+#portfolio{
+  background: hsl(207, 26%, 17%);
 }
