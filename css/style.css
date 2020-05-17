@@ -197,3 +197,15 @@ h1 {
 span{
   font-weight: bold;
 }
+
+.card-details{
+  display: flex;
+  height: 90vh;
+  margin:  0 30px;
+  justify-content: center;
+  align-items: center;
+}
+.portfolio-header{
+  text-align: center;
+  padding-top: 20px;
+}
