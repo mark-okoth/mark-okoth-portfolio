@@ -161,6 +161,7 @@ h1 {
 .image-section img {
   box-shadow: 10px 10px 10px black;
   height: 500px;
+  width: 400px;
 }
 .about-description {
   grid-area: about-description;
@@ -208,4 +209,18 @@ span{
 .portfolio-header{
   text-align: center;
   padding-top: 20px;
+}
+
+.card{
+  box-shadow: 2px 2px 2px 2px  darkslategrey;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+}
+
+.card p{
+  text-align: center;
 }
