@@ -241,3 +241,15 @@ span{
   bottom: 50px;
 
 }
+
+.card a{
+  margin: 10px;
+  padding: 10px 20px;
+  background: linear-gradient(to right, blue, aqua);
+  color: white;
+  transition: all 2s ease-in;
+}
+
+.card a:hover{
+  background: linear-gradient(to right,yellow, aqua);
+}
