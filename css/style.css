@@ -248,6 +248,7 @@ span{
   background: linear-gradient(to right, blue, aqua);
   color: white;
   transition: all 2s ease-in;
+  border-radius: 25px;
 }
 
 .card a:hover{
