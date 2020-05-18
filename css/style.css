@@ -238,7 +238,7 @@ span{
   height: 80px;
   width: 80px;
   position: relative;
-  bottom: 50px;
+  bottom: 40px;
 
 }
 
@@ -247,10 +247,18 @@ span{
   padding: 10px 20px;
   background: linear-gradient(to right, blue, aqua);
   color: white;
-  transition: all 2s ease-in;
-  border-radius: 25px;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  /* border-radius: 25px; */
+  position: relative;
 }
 
+
 .card a:hover{
-  background: linear-gradient(to right,yellow, aqua);
+  
+  background: linear-gradient(to right, #05fbff, #1e00ff);
+  color: black;
+  transform: scale(1.1);
 }
