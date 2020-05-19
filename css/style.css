@@ -92,12 +92,11 @@ nav li a:hover {
   -moz-transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
   transition: all 1s ease-in-out;
-  background: linear-gradient(to right, grey, lightblue);
+  background: gray
 }
 .contact:hover {
-  background-color: #ffff;
-  color: black;
-  background: linear-gradient(to right, #05fbff, #1e00ff);
+  transform: scale(1.05);
+
 }
 .about:hover {
   opacity: 1;
@@ -113,12 +112,12 @@ nav li a:hover {
   border: 1px solid white;
   border-radius: 50%;
   padding: 15px;
-  transition: all 2s ease-in-out;
-  background: linear-gradient(to right, #30cfd0 0%, #330867 100%);
+  transition: all 1s ease-in-out;
+  background: gray
 }
 
 .social .fa:hover {
-  background: #ffff;
+  transform: scale(1.05);
 }
 
 h1 {
@@ -326,7 +325,7 @@ footer ul li{
 }
 ul li a .fa{
   padding: 10px;
-  background: white;
+  background:gray;
   border-radius: 50%;
   margin-bottom: 20px;
   transition: all 800ms ease-in-out;
