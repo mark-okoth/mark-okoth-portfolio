@@ -24,7 +24,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   min-height: 50px;
-  background: black;
+  background:transparent;
   
 }
 
@@ -136,7 +136,7 @@ h1 {
 
 .about-container {
   display: grid;
-  background: rgb(216, 247, 231);
+  background: black;
   color: white;
   height: 100vh;
   grid-template-areas:
@@ -148,18 +148,18 @@ h1 {
 .about-header {
   grid-area: about-header;
   text-align: center;
+  color: white;
 }
 .about-header h3 {
   padding: 10px;
   text-transform: uppercase;
-  color: black;
+  color: white;
 }
 .image-section {
   grid-area: image-section;
   margin-left: 20px;
 }
 .image-section img {
-  box-shadow: 10px 10px 10px black;
   height: 500px;
   width: 400px;
 }
@@ -167,14 +167,13 @@ h1 {
   grid-area: about-description;
   display: flex;
   flex-direction: column;
-  background: white;
+  background:black;
   justify-content: center;
   align-items: center;
-  color: black;
+  color:white;
   font-family: Tangerine;
   height: 500px;
   margin-right: 20px;
-  box-shadow: 5px 5px 5px black;
   
 }
 
@@ -186,14 +185,15 @@ h1 {
 .about-description a{
   
   padding: 20px;
-  color: black;
+  color:white;
   background: linear-gradient(to right, grey, lightblue);
-  transition: all 2s ease-in-out;
+  transition: all 1s ease-in-out;
   text-transform: uppercase;
 }
 
 .about-description a:hover{
-  background: aquamarine;
+  background: linear-gradient(to right, #05fbff, #1e00ff);
+  color: black;
 }
 span{
   font-weight: bold;
@@ -209,6 +209,7 @@ span{
 .portfolio-header{
   text-align: center;
   padding-top: 20px;
+  color: white;
 }
 
 .card{
@@ -220,7 +221,7 @@ span{
   justify-content: center;
   align-items: center;
   height: 400px;
-  background: hsl(207, 26%, 8%);
+  background: hsl(204, 33%, 3%);
   color:white;
 }
 
@@ -228,7 +229,7 @@ span{
   text-align: center;
 }
 #portfolio{
-  background: hsl(207, 26%, 17%);
+  background: black;
 }
 
 .card + .card{
@@ -245,7 +246,7 @@ span{
 .card a{
   margin: 10px;
   padding: 10px 20px;
-  background: linear-gradient(to right, blue, aqua);
+  background: linear-gradient(to right, grey, lightblue);
   color: white;
   -webkit-transition: all 1s ease-in-out;
   -moz-transition: all 1s ease-in-out;
@@ -261,4 +262,51 @@ span{
   background: linear-gradient(to right, #05fbff, #1e00ff);
   color: black;
   transform: rotate(-45deg);
+}
+.contact-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  background: black;
+  color: white;
+
+}
+::placeholder{
+  color:white;
+}
+
+.form-input input{
+  width: 300px;
+}
+
+input{
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  background: black;
+  padding: 10px;
+  margin-top:10px ;
+  outline: none;
+  color: white;
+}
+button{
+  width: 320px;
+  padding: 0.2rem;
+  margin-top: 10px;
+  color:white;
+  background: gray;
+  border: gray;
+  text-transform: uppercase;
+  transition: all 600ms ease-in;
+  
+  
+}
+
+
+button:hover{
+  border: gray;
+  outline: none;
+  transform: scale(1.02);
 }

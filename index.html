@@ -3,20 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/style.css" />
 
     <title>Mark Okoth</title>
   </head>
-  <body>
+  <body >
+  <div id="app">
     <div class="container" id="home">
       <nav>
         <a href="" class="logo">MARK OKOTH....</a>
         <ul>
-          <li><a href="#home">HOME</a></li>
+          <li><a href="#home">{{title}}</a></li>
           <li><a href="#about">ABOUT</a></li>
           <li><a href="#portfolio">PORTFOLIO</a></li>
-          <li><a href="">CONTACT</a></li>
+          <li><a href="#contactme">CONTACT</a></li>
         </ul>
       </nav>
       <div class="home content">
@@ -93,7 +95,28 @@
   </div>
 </div>
 </section>
+<section class="contact-section" id="contactme">
 
+  <div class="contact-header">
+    <h3>CONTACT ME</h3>
+  </div>
 
+  <div class="form-input">
+    <input type="email" name="" id="email" placeholder="Email Address">
+  </div>
+  <div class="form-input">
+    <input type="text" name="" id="name" placeholder="Name">
+  </div>
+  <div class="form-input">
+    <input type="text" name="" id="phone" placeholder="Phone">
+  </div>
+  <div class="form-input">
+   <button type="submit">Send message</button>
+  </div>
+  
+</section>
+</div>
+
+<script src="./js/main.js"></script>
   </body>
 </html>
