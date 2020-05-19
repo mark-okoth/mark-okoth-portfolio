@@ -329,5 +329,10 @@ ul li a .fa{
   background: white;
   border-radius: 50%;
   margin-bottom: 20px;
+  transition: all 800ms ease-in-out;
+}
+
+footer ul li a .fa:hover{
+  transform: scale(1.2);
 }
 
