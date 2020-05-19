@@ -1,6 +1,10 @@
 new Vue({
     el: '#app',
     data:{
-        title: 'HOME'
-    }
+        title: 'HOME',
+        html: 90,
+        attached: false
+    },
+    methods: {
+    },
 })

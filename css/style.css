@@ -72,10 +72,10 @@ nav li a:hover {
   width: 60vw;
   font-size: 1.2rem;
   transition: all 1s ease;
-  opacity: 0.5;
+  opacity: 0.8;
 }
 
-.about h1 {
+.about h3 {
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -99,6 +99,7 @@ nav li a:hover {
 .about:hover {
   opacity: 1;
   color: #ffff;
+  transform: scale(1.08);
 }
 .social ul li {
   display: inline-block;
@@ -118,7 +119,7 @@ nav li a:hover {
   transform: scale(1.05);
 }
 
-h1 {
+h3 {
   text-transform: uppercase;
   background: linear-gradient(to right, #30cfd0 0%, #330867 100%);
   -webkit-background-clip: text;
@@ -357,10 +358,92 @@ footer ul li a .fa:hover {
   flex-direction: column;
 }
 
-input{
-  
-}
-
 label{
   margin-left:10px;
+}
+
+input[type=range]:disabled{
+ /* background-color: #3071a9; */
+}
+
+label span{
+  display: flex;
+  justify-content: right;
+}
+
+footer{
+  border-top: 1px solid gray;
+}
+#contactme , #about{
+  border-top: 1px solid gray;
+}
+#about{
+  border-bottom: 1px solid gray;
+}
+
+@media( max-width: 700px){
+
+     .social .fa{
+       padding: 5px;
+     }
+     .contact{
+       padding: 5px 70px;
+       margin-top: 5px;
+     }
+     .nova{
+       display: none;
+     }
+     .about{
+       width: 90vw;
+     }
+     .about-description{
+       width: 95vw;
+       text-align: center;
+     }
+     #about{
+       height: 100vh;
+     }
+     #portfolio{
+       height: 100vh;
+       width: 100%;
+     }
+     .input-form{
+       display: flex;
+       width: 300px;
+       align-items: center;
+       justify-content: center;
+     }
+     #portfolio .input-form input{
+       width: 80vw;
+     }
+nav li a:hover{
+  border-bottom: none;
+  cursor: pointer;
+}
+.display{
+  display: flex;
+  flex-direction: column;
+  position: absolute;;
+  width: 100vw;
+  height: 80vh;
+  justify-content: center;
+  align-items: center;
+  top: 5%;
+  margin-left: 2px;
+  opacity: 0.4;
+  z-index: 0;
+  background:transparent;
+}
+.toggle .fa{
+background: transparent;
+}
+.undisplay{
+  display:none;
+}
+}
+
+@media( min-width: 701px){
+  .toggle{
+    display: none;
+  }
 }

@@ -12,9 +12,13 @@
   <body >
   <div id="app">
     <div class="container" id="home">
-      <nav>
+      <nav >
         <a href="" class="logo">MARK OKOTH....</a>
-        <ul>
+        <ul class="toggle" @click="attached = !attached">
+          <li><a href="" @click.prevent><i class="fa fa-bars" aria-hidden="true"></i></a></li>
+        </ul>
+        
+        <ul class="nova" :class="{display: attached, undisplay:!attached}">
           <li><a href="#home">{{title}}</a></li>
           <li><a href="#about">ABOUT</a></li>
           <li><a href="#portfolio">SKILLS</a></li>
@@ -23,14 +27,15 @@
       </nav>
       <div class="home content">
         <div class="about">
+          <h3>Hello I'm Mark Okoth</h3>
             <p class="description">
-                <h1>Hello I'm Mark Okoth</h1>
+                
                 "Passionate Technologist and Software Engineer. with skills in 
                 javascript Python django React Vue Node"
             </p>
             
         </div>
-        <a href="" class="contact button">contact me</a>
+        <a href="" class="contact button">contact</a>
         <br>
         <div class="social">
           <ul>
@@ -69,42 +74,42 @@
    <h3>SKILLS</h3>
 
    <div class="input-form">
-    <label for="html">HTML</label>
+    <label for="html">HTML {{html}} / 100</label>
   
-    <input type="range" min="0" max="100" value="90" name="html" id="html" class="slider">
+    <input type="range" min="0" max="100" value="95" disabled="disabled" name="html" id="html" class="slider">
   </div>
   <div class="input-form">
-    <label for="html">Css</label>
+    <label for="html">Css {{html}} / 100</label>
   
-    <input type="range" min="0" max="100" value="90" name="html" id="html" class="slider">
+    <input type="range" min="0" max="100" value="90"  disabled="disabled" name="html" id="html" class="slider">
   </div>
   <div class="input-form">
-    <label for="html">Javascript</label>
-    <input type="range" min="0" max="100" value="90" name="html" id="html" class="slider">
+    <label for="html">Javascript {{html}} / 100</label>
+    <input type="range" min="0" max="100" value="80" disabled="disabled" name="html" id="html" class="slider">
   </div>
   <div class="input-form">
-    <label for="html">Python</label>
-    <input type="range" min="0" max="100" value="90" name="html" id="html" class="slider">
+    <label for="html">Python {{html}} / 100</label>
+    <input type="range" min="0" max="100" value="70" disabled="disabled" name="html" id="html" class="slider">
   </div>
   <div class="input-form">
-    <label for="html">Vue</label>
-    <input type="range" min="0" max="100" value="90" name="html" id="html" class="slider">
+    <label for="html">Vue {{html}} / 100</label>
+    <input type="range" min="0" max="100" value="70" disabled="disabled" name="html" id="html" class="slider">
   </div>
   <div class="input-form">
-    <label for="html">React</label>
-    <input type="range" min="0" max="100" value="90" name="html" id="html" class="slider">
+    <label for="html">React {{html}} / 100</label>
+    <input type="range" min="0" max="100" value="60" disabled="disabled" name="html" id="html" class="slider">
   </div>
   <div class="input-form">
-    <label for="html">Django</label>
-    <input type="range" min="0" max="100" value="90" name="html" id="html" class="slider">
+    <label for="html">Django {{html}} / 100</label>
+    <input type="range" min="0" max="100" value="65" disabled="disabled" name="html" id="html" class="slider">
   </div>
   <div class="input-form">
-    <label for="html">Node.js</label>
-    <input type="range" min="0" max="100" value="90" name="html" id="html" class="slider">
+    <label for="html">Node.js {{html}} / 100</label>
+    <input type="range" min="0" max="100" value="70" disabled="disabled" name="html" id="html" class="slider">
   </div>
-
 
 </section>
+
 <section class="contact-section" id="contactme">
 
   <div class="contact-header">
@@ -121,7 +126,7 @@
     <input type="text" name="" id="phone" placeholder="Phone" required>
   </div>
   <div class="form-input">
-   <button type="submit">Send message</button>
+   <button type="submit" @submit.prevent>Send message</button>
   </div>
 </form>
 </section>
