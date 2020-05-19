@@ -69,7 +69,7 @@ nav li a:hover {
   height: 90vh;
 }
 .about {
-  width: 700px;
+  width: 60vw;
   font-size: 1.2rem;
   transition: all 1s ease;
   opacity: 0.5;
@@ -132,52 +132,31 @@ h1 {
 }
 
 .about-container {
-  display: grid;
-  background: black;
-  color: white;
-  height: 100vh;
-  grid-template-areas:
-    "about-header about-header about-header"
-    "image-section about-description about-description";
-  grid-gap: 1.5rem;
+ display: flex;
+ background: black;
+color: white;
+flex-direction: column;
+height: 90vh;
+justify-content: center;
+align-items: center;
+text-align:left;
+}
+.about-description{
+  width: 60vw;
+  opacity: 0.5;
+  transition: all 1s ease-in-out;
+}
+.about-description:hover{
+  opacity: 1;
+  transform: scale(1.03);
 }
 
-.about-header {
-  grid-area: about-header;
-  text-align: center;
-  color: white;
-}
-.about-header h3 {
-  padding: 10px;
-  text-transform: uppercase;
-  color: white;
-}
-.image-section {
-  grid-area: image-section;
-  margin-left: 20px;
-}
-.image-section img {
-  height: 500px;
-  width: 400px;
-}
-.about-description {
-  grid-area: about-description;
-  display: flex;
-  flex-direction: column;
-  background: black;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  font-family: Tangerine;
-  height: 500px;
-  margin-right: 20px;
+.about-btn{
+  margin-top: 20px;
 }
 
-.about-description p {
-  margin: 0 20px;
-}
+.about-btn a{
 
-.about-description a {
   padding: 15px;
   color: white;
   background: gray;
@@ -185,7 +164,7 @@ h1 {
   text-transform: uppercase;
 }
 
-.about-description a:hover {
+.about-btn a:hover {
   transform: scale(1.05);
   color: black;
 }
@@ -206,7 +185,7 @@ span {
 }
 
 #portfolio .input-form input{
-  width: 600px;
+  width: 50vw;
 }
 
 input[type=range] {
@@ -310,7 +289,7 @@ input[type=range]:focus::-ms-fill-upper {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 70vh;
+  height: 80vh;
   background: black;
   color: white;
 }
