@@ -24,8 +24,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   min-height: 50px;
-  background:transparent;
-  
+  background: black;
 }
 
 nav .logo {
@@ -92,11 +91,10 @@ nav li a:hover {
   -moz-transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
   transition: all 1s ease-in-out;
-  background: gray
+  background: gray;
 }
 .contact:hover {
   transform: scale(1.05);
-
 }
 .about:hover {
   opacity: 1;
@@ -113,7 +111,7 @@ nav li a:hover {
   border-radius: 50%;
   padding: 15px;
   transition: all 1s ease-in-out;
-  background: gray
+  background: gray;
 }
 
 .social .fa:hover {
@@ -166,103 +164,148 @@ h1 {
   grid-area: about-description;
   display: flex;
   flex-direction: column;
-  background:black;
+  background: black;
   justify-content: center;
   align-items: center;
-  color:white;
+  color: white;
   font-family: Tangerine;
   height: 500px;
   margin-right: 20px;
-  
 }
 
 .about-description p {
   margin: 0 20px;
-  
 }
 
-.about-description a{
-  
-  padding: 20px;
-  color:white;
-  background: linear-gradient(to right, grey, lightblue);
+.about-description a {
+  padding: 15px;
+  color: white;
+  background: gray;
   transition: all 1s ease-in-out;
   text-transform: uppercase;
 }
 
-.about-description a:hover{
-  background: linear-gradient(to right, #05fbff, #1e00ff);
+.about-description a:hover {
+  transform: scale(1.05);
   color: black;
 }
-span{
+span {
   font-weight: bold;
 }
 
-.card-details{
-  display: flex;
-  height: 90vh;
-  margin:  0 30px;
-  justify-content: center;
-  align-items: center;
-}
-.portfolio-header{
-  text-align: center;
-  padding-top: 20px;
+#portfolio {
+  background: black;
+  height: 100vh;
   color: white;
-}
-
-.card{
-
- 
   display: flex;
-  flex: 1;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 400px;
-  background: hsl(204, 33%, 3%);
-  color:white;
-}
-
-.card p{
-  text-align: center;
-}
-#portfolio{
-  background: black;
-}
-
-.card + .card{
-  margin-left: 20px;
-}
-.card img{
-  height: 80px;
-  width: 80px;
-  position: relative;
-  bottom: 40px;
-
-}
-
-.card a{
-  margin: 10px;
-  padding: 10px 20px;
-  background: linear-gradient(to right, grey, lightblue);
-  color: white;
-  -webkit-transition: all 1s ease-in-out;
-  -moz-transition: all 1s ease-in-out;
-  -o-transition: all 1s ease-in-out;
-  transition: all 2s ease;
-  text-transform: uppercase;
+  width: 100vw;
   position: relative;
 }
 
-
-.card a:hover{
-  
-  background: linear-gradient(to right, #05fbff, #1e00ff);
-  color: black;
-  transform: rotate(-45deg);
+#portfolio .input-form input{
+  width: 600px;
 }
-.contact-section{
+
+input[type=range] {
+  -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+  width: 100%; /* Specific width is required for Firefox. */
+  background: transparent; /* Otherwise white in Chrome */
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+input[type=range]:focus {
+  outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+}
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  background: yellow;
+  cursor: pointer;
+  margin-top: -14px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; /* Add cool effects to your sliders! */
+}
+
+/* All the same stuff for Firefox */
+input[type=range]::-moz-range-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 1px solid #000000;
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  background: yellow;
+  cursor: pointer;
+}
+
+/* All the same stuff for IE */
+input[type=range]::-ms-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 1px solid #000000;
+  height: 36px;
+  width: 16px;
+  border-radius: 3px;
+  background: blue;
+  cursor: pointer;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  background: #367ebd;
+  border-radius: 1.3px;
+  border: 0.2px solid #010101;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #367ebd;
+}
+
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  background: #3071a9;
+  border-radius: 1.3px;
+  border: 0.2px solid #010101;
+}
+
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  border-width: 16px 0;
+  color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+  background: #2a6495;
+  border: 0.2px solid #010101;
+  border-radius: 2.6px;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+input[type=range]:focus::-ms-fill-lower {
+  background: #3071a9;
+}
+input[type=range]::-ms-fill-upper {
+  background: #3071a9;
+  border: 0.2px solid #010101;
+  border-radius: 2.6px;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+input[type=range]:focus::-ms-fill-upper {
+  background: #367ebd;
+}
+.contact-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -270,47 +313,43 @@ span{
   height: 70vh;
   background: black;
   color: white;
-
 }
-::placeholder{
-  color:white;
+::placeholder {
+  color: white;
 }
 
-.form-input input{
+.form-input input {
   width: 300px;
 }
 
-input{
+input {
   border-top: none;
   border-right: none;
   border-left: none;
   background: black;
   padding: 10px;
-  margin-top:10px ;
+  margin-top: 10px;
   outline: none;
   color: white;
 }
-button{
+button {
   width: 320px;
   padding: 0.2rem;
   margin-top: 10px;
-  color:white;
+  color: white;
   background: gray;
   border: gray;
   text-transform: uppercase;
   transition: all 600ms ease-in;
-  
-  
 }
 
-
-button:hover{
+button:hover {
   border: gray;
   outline: none;
   transform: scale(1.02);
 }
 
-footer{
+footer {
   height: 20vh;
   background: black;
   color: white;
@@ -319,18 +358,30 @@ footer{
   align-items: center;
 }
 
-footer ul li{
- display: inline;
- padding: 15px;
+footer ul li {
+  display: inline;
+  padding: 15px;
 }
-ul li a .fa{
+ul li a .fa {
   padding: 10px;
-  background:gray;
+  background: gray;
   border-radius: 50%;
   margin-bottom: 20px;
   transition: all 800ms ease-in-out;
 }
 
-footer ul li a .fa:hover{
+footer ul li a .fa:hover {
   transform: scale(1.2);
+}
+.input-form{
+  display: flex;
+  flex-direction: column;
+}
+
+input{
+  
+}
+
+label{
+  margin-left:10px;
 }
