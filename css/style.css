@@ -310,3 +310,24 @@ button:hover{
   outline: none;
   transform: scale(1.02);
 }
+
+footer{
+  height: 20vh;
+  background: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer ul li{
+ display: inline;
+ padding: 15px;
+}
+ul li a .fa{
+  padding: 10px;
+  background: white;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
