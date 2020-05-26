@@ -296,6 +296,7 @@ input[type=range]:focus::-ms-fill-upper {
 }
 ::placeholder {
   color: white;
+  font-size: 1.03rem;
 }
 
 .form-input input {
@@ -446,4 +447,9 @@ background: transparent;
   .toggle{
     display: none;
   }
+}
+
+footer{
+  height: 30vh;
+  text-align: center;
 }
