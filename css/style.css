@@ -7,9 +7,11 @@
   font-family: roboto;
   line-height: 2;
   word-spacing: 5px;
+  
 }
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 .logo {
@@ -154,6 +156,8 @@ text-align:left;
 
 .about-btn{
   margin-top: 20px;
+  overflow: hidden;
+  padding: 10px 20px;
 }
 
 .about-btn a{
@@ -526,4 +530,23 @@ footer{
   .card{
     margin-bottom: 10px;
   }
+}
+/* scrollbar */
+::-webkit-scrollbar {
+  width: 20px;
+  background: linear-gradient(to right, #30cfd0 0%, #330867 100%);
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+  background:rgb(39, 58, 1); 
+  /* border-radius: 50px; */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background:rgb(55, 82, 2); 
 }
