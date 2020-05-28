@@ -7,6 +7,7 @@
   font-family: roboto;
   line-height: 2;
   word-spacing: 5px;
+  /* background-color: black; */
   
 }
 html {
@@ -544,7 +545,7 @@ footer{
  
 ::-webkit-scrollbar-thumb {
   background:rgb(39, 58, 1); 
-  /* border-radius: 50px; */
+  border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {

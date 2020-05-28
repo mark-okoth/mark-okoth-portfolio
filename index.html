@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/style.css" />
 
@@ -27,7 +27,7 @@
         </ul>
       </nav>
       <div class="home content">
-        <div class="about ">
+        <div class="about "  data-aos="fade-right" data-aos-duration="2000">
           <h3>Hello I'm Mark Okoth</h3>
             <p class="description">
                 
@@ -60,7 +60,7 @@
   <div class="about-header">
    <h3>About Me</h3>
   </div>
-   <div class="about-description">
+   <div class="about-description" data-aos="fade-left" data-aos-duration="2000">
   <p>I am a software developer and a <span>Business Information Technology</span> student at The Co-operative University Of Kenya. 
     My passion and love of coding started back in 2018 
     when I was a computer science student at <span>University of Constantine 2 Algeria</span> which I later dropped out in the 2 years due 
@@ -74,40 +74,40 @@
    </div>
 </section >
 
-<section class="portfolio-container" id="portfolio">
+<section class="portfolio-container" id="portfolio" >
    <h3>SKILLS</h3>
 
-   <div class="input-form">
+   <div class="input-form"data-aos="fade-left">
     <label for="html">HTML {{html}} / 100</label>
   
     <input type="range" min="0" max="100" value="95" disabled="disabled" name="html" id="html" class="slider">
   </div>
-  <div class="input-form">
+  <div class="input-form" data-aos="fade-right">
     <label for="html">Css {{css}} / 100</label>
   
     <input type="range" min="0" max="100" value="90"  disabled="disabled" name="html" id="html" class="slider">
   </div>
-  <div class="input-form">
+  <div class="input-form" data-aos="fade-left" data-aos-duration="1000">
     <label for="html">Javascript {{javascript}} / 100</label>
     <input type="range" min="0" max="100" value="80" disabled="disabled" name="html" id="html" class="slider">
   </div>
-  <div class="input-form">
+  <div class="input-form" data-aos="fade-left" data-aos-duration="1000">
     <label for="html">Python {{python}} / 100</label>
     <input type="range" min="0" max="100" value="70" disabled="disabled" name="html" id="html" class="slider">
   </div>
-  <div class="input-form">
+  <div class="input-form" data-aos="fade-left" data-aos-duration="2000">
     <label for="html">Vue {{vue}} / 100</label>
     <input type="range" min="0" max="100" value="70" disabled="disabled" name="html" id="html" class="slider">
   </div>
-  <div class="input-form">
+  <div class="input-form" data-aos="fade-right" data-aos-duration="3000">
     <label for="html">React {{react}} / 100</label>
     <input type="range" min="0" max="100" value="60" disabled="disabled" name="html" id="html" class="slider">
   </div>
-  <div class="input-form">
+  <div class="input-form" data-aos="fade-left" data-aos-duration="2000">
     <label for="html">Django {{django}} / 100</label>
     <input type="range" min="0" max="100" value="65" disabled="disabled" name="html" id="html" class="slider">
   </div>
-  <div class="input-form">
+  <div class="input-form" data-aos="fade-right" data-aos-duration="1000">
     <label for="html">Node.js {{node}} / 100</label>
     <input type="range" min="0" max="100" value="70" disabled="disabled" name="html" id="html" class="slider">
   </div>
@@ -118,7 +118,7 @@
     <h3>projects</h3>
   </div>
   <div class="card-container">
-  <div class="card">
+  <div class="card" data-aos="flip-right" data-aos-duration="2000">
     <div class="project">
       <p>Front end projects</p>
       <a href="">vue coding app</a>
@@ -127,7 +127,7 @@
       <br>
     </div>
   </div>
-  <div class="card">
+  <div class="card" data-aos="flip-left" data-aos-duration="2000">
     <div class="project">
       <p>Back-end projects</p>
       <a href="">Django real estate</a>
@@ -156,7 +156,7 @@
   <div class="contact-header">
     <h3>CONTACT ME</h3>
   </div>
-<form>
+<form  data-aos="flip-left"data-aos-easing="ease-out-cubic" data-aos-duration="2000">
   <div class="form-input">
     <input type="email" name="" id="email" placeholder="Email Address" required>
   </div>
@@ -171,8 +171,8 @@
   </div>
 </form>
 </section>
-<footer>
-<div class="footer-container">
+<footer >
+<div class="footer-container" data-aos="fade-left">
   <ul>
     <li>
       <a href="https://twitter.com/mark25floor" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></i></a>
@@ -196,7 +196,10 @@
 
 </footer>
 </div>
-
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 <script src="./js/main.js"></script>
   </body>
 </html>
