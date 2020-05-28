@@ -460,7 +460,7 @@ footer{
 }
 
 .timeline{
-  height: 100vh;
+  height: 80vh;
   background: black;
   color: white;
 }
@@ -488,6 +488,7 @@ footer{
   background: rgb(12, 11, 11);
   width: 300px;
   min-height: 200px;
+  border-radius: 5px;
 }
 .card + .card{
   margin-left: 10px;
@@ -516,4 +517,13 @@ footer{
   justify-content: center;
   align-items: center;
   border-radius: 5px;
+}
+
+@media(max-width:680px){
+  .timeline{
+    height: 100vh;
+  }
+  .card{
+    margin-bottom: 10px;
+  }
 }
